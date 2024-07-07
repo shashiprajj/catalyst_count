@@ -4,11 +4,11 @@
 Catalyst-Count is a web application built with Django 3.x/4.x, PostgreSQL, and Bootstrap 4/5. The application allows users to log in and upload large CSV files (up to 1GB) with a visual progress indicator for the upload. Once uploaded, the data is stored in a PostgreSQL database. Users can filter the data using a form and view the count of records based on the applied filters.
 
 ## Features
-### User Authentication: Authentication is handled via django-allauth.
-### File Upload: Users can upload large CSV files with a visual progress bar.
-### Data Storage: Uploaded data is stored in a PostgreSQL database.
-### Data Filtering: Users can filter the data and view the count of records based on the applied filters.
-### Responsive UI: The application uses Bootstrap 4/5 for a responsive and modern UI.
+1. User Authentication: Authentication is handled via django-allauth.
+2.  File Upload: Users can upload large CSV files with a visual progress bar.
+3. Data Storage: Uploaded data is stored in a PostgreSQL database.
+4. Data Filtering: Users can filter the data and view the count of records based on the applied filters.
+5. Responsive UI: The application uses Bootstrap 4/5 for a responsive and modern UI.
 
 ## Project Setup
 ### Prerequisites
