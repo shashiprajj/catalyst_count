@@ -19,7 +19,7 @@ Git
 
 ### Installation
 Clone the repository:
-git clone https://github.com/your-username/catalyst-count.git
+git clone https://github.com/shashiprajj/catalyst_count.git
 cd catalyst-count
 
 ### Create and activate a virtual environment:
