@@ -1,0 +1,6 @@
+/* catalyst_builder_app/static/css/bootstrap.min.css */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+h1 {
+    color: red
+}

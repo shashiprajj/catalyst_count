@@ -1,0 +1,85 @@
+{% extends 'catalyst_builder_app/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Query Builder</h2>
+
+    {% if count %}
+        <div class="alert alert-success mt-3">
+            {{ count }} records found for the query.
+        </div>
+    {% endif %}
+
+    <form method="post" id="queryForm">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    {{ form.keyword.label_tag }}
+                    {{ form.keyword }}
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    {{ form.industry.label_tag }}
+                    {{ form.industry }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    {{ form.year_founded.label_tag }}
+                    {{ form.year_founded }}
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    {{ form.city.label_tag }}
+                    {{ form.city }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    {{ form.state.label_tag }}
+                    {{ form.state }}
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    {{ form.country.label_tag }}
+                    {{ form.country }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    {{ form.current_employee_estimate.label_tag }}
+                    {{ form.current_employee_estimate }}
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    {{ form.total_employee_estimate.label_tag }}
+                    {{ form.total_employee_estimate }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary mr-2">Query Data</button>
+                <button type="button" class="btn btn-secondary" onclick="resetForm()">Reset</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+function resetForm() {
+    document.getElementById("queryForm").reset();
+}
+</script>
+{% endblock %}
